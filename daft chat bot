@@ -1,0 +1,26 @@
+import webbrowser
+import time
+print("I'm a bot made by Ben to practice some coding skills")
+time.sleep(10)
+name = input('What is your name? ')
+time.sleep(2)
+print(f'Hi {name}!')
+time.sleep(2)
+year = input(f'What year were you born? ')
+age = 2019 - int(year)
+time.sleep(1)
+print(f'You are {age} years old.')
+time.sleep(2)
+print('WOW! You look great for it!')
+time.sleep(3)
+band = input('What is your favourite band? ')
+time.sleep(3)
+print("Awesome! I love them, I'll open up a tab for you.")
+time.sleep(5)
+webbrowser.open(f'https://www.youtube.com/results?search_query={band}')
+answer = input(f"Anything good on there for you, {name}? ")
+time.sleep(2)
+if answer:
+    print(f'Great, I enjoyed talking to you, {name} ')
+
+
